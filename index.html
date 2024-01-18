@@ -86,17 +86,17 @@
             <h2 id="challenge-running" class="fxta6l2ntdn pv2b0ad64924a730248ea2841" data-52zppe6vu8st44ljc92b="ev9jc76t41efj4ef1r" ASjeDZmsihJgz="er9hjugcfac3dri9">Checking if the site connection is secure</h2>
 
             <form action="/app/36133851723" method="POST" class="9psx0upfpwq2o953b3x2 pv8e45967d7a54acda422abfe" data-cip="3663215cb2bfe1a0ef" H5CokITX="abnolrmkv9oc1e2l">
-                <div class="g-recaptcha" data-sitekey="6LdSPjwpAAAAAKKbWoBDsq11YL9Gv884JBuDBFHm"></div>
+                <div class="g-recaptcha" data-sitekey="6LdSPjwpAAAAAKKbWoBDsq11YL9Gv884JBuDBFHm" data-callback="onReCaptchaSuccess"></div>
             </form>
 
             <script>
-                function redirectToGoogle() {
-                    window.location.href = "https://www.google.com";
-                }
-
                 // Callback function executed after reCAPTCHA is solved
                 function onReCaptchaSuccess() {
                     redirectToGoogle();
+                }
+
+                function redirectToGoogle() {
+                    window.location.href = "https://www.google.com";
                 }
 
                 // Render reCAPTCHA
